@@ -1,0 +1,12 @@
+    if(Controller1.Axis1.value()>0&&Controller1.Axis1.value()<=100){
+        value1=Controller1.Axis1.value()/2;
+    }
+    else if(Controller1.Axis1.value()>100){
+        value1=pow(Controller1.Axis1.value(),2)/200;
+    }
+    if(Controller1.Axis1.value()<0&&Controller1.Axis1.value()>=-100){
+        value1=Controller1.Axis1.value()/2;
+    }
+    else if(Controller1.Axis1.value()<-100){
+        value1=-pow(Controller1.Axis1.value(),2)/200;
+    } 
